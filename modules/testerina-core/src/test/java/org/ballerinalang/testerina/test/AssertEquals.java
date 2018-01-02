@@ -18,8 +18,6 @@
 
 package org.ballerinalang.testerina.test;
 
-import org.ballerinalang.model.values.BInteger;
-import org.ballerinalang.model.values.BValue;
 import org.ballerinalang.testerina.test.utils.BTestUtils;
 import org.ballerinalang.testerina.test.utils.CompileResult;
 import org.ballerinalang.util.codegen.FunctionInfo;
@@ -36,7 +34,7 @@ public class AssertEquals {
     CompileResult compileResult;
     @BeforeClass
     public void setup() {
-        compileResult = BTestUtils.compile("assert-equals-valid.bal");
+        compileResult = BTestUtils.compile("assert-test/assert-equals-valid.bal");
     }
     
     @DataProvider(name = "AssertEqualsValidFunctionNames")
